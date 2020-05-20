@@ -1,10 +1,28 @@
+/*****************************
+Variables and data types
+*/
+
+// let firstName = 'Bita';
+// console.log(firstName);
+
+// let lastName = 'De La Rosa';
+// let age = 29;
+// console.log(lastName, age);
+
+// let fullAge = true;
+// let job = 'Teacher';
+// console.log(fullAge, job);
+
+/*****************************
+Variable mutation and type coercion
+*/
+
 let firstName = 'Bita';
-console.log(firstName);
-
-let lastName = 'De La Rosa';
 let age = 29;
-console.log(lastName, age);
+console.log(firstName + ' ' + age);
 
-let fullAge = true;
-let job = 'Teacher';
-console.log(fullAge, job);
+let job, isMarried;
+job = 'Teacher';
+isMarried = true;
+
+console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
