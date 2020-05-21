@@ -101,3 +101,30 @@ Operator precedence
 // console.log(x)
 // x--;
 // console.log(x);
+
+/***********************************
+Coding Challenge 1
+ */
+
+/*
+Mark and John are trying to compare their BMI, which is calculated using the formula: BMI = mass / (height * height). (Mass is in kg and height is in meters).
+
+1. Store Mark and John's mass and height in variables.
+2. Calculate both their BMIs.
+3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+4. Pring a string to the console containing the variable from step 3. (Something like "Is Marks BMI higher than John's? true/false").
+*/
+
+let markMass = 70;
+let markHeight = 1.8;
+let johnMass = 80;
+let johnHeight = 1.9;
+
+let markBMI = markMass / (markHeight * markHeight);
+console.log(markBMI);
+let johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(johnBMI);
+
+let higherBMI = markBMI > johnBMI;
+console.log(higherBMI);
+console.log('Is Marks BMI higher than Johns? The answer is ' + higherBMI);
