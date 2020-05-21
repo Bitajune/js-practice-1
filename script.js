@@ -44,15 +44,26 @@ Basic operators
 
 let year, yearBita, yearChris;
 year = 2020;
-yearBita = year - 29;
-yearChris = year - 31;
+ageBita = 29;
+ageChris = 31;
+
+// math operators
+yearBita = year - ageBita;
+yearChris = year - ageChris;
 
 console.log(yearBita, yearChris);
 console.log(year + 20);
 console.log(year * 20);
 console.log(year / 20);
 
-/***********************************
-Logical operators
- */
+// logical operators
 
+let chrisOlder = ageChris > ageBita;
+console.log(chrisOlder);
+
+// typeof operators
+console.log(typeof chrisOlder);
+console.log(typeof ageBita);
+console.log(typeof 'Chris is older than Bita');
+let x;
+console.log(typeof x);
