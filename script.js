@@ -1,39 +1,58 @@
-/*****************************
-Variables and data types
-*/
+// /*****************************
+// Variables and data types
+// */
+
+// // let firstName = 'Bita';
+// // console.log(firstName);
+
+// // let lastName = 'De La Rosa';
+// // let age = 29;
+// // console.log(lastName, age);
+
+// // let fullAge = true;
+// // let job = 'Teacher';
+// // console.log(fullAge, job);
+
+// /*****************************
+// Variable mutation and type coercion
+// */
 
 // let firstName = 'Bita';
-// console.log(firstName);
-
-// let lastName = 'De La Rosa';
 // let age = 29;
-// console.log(lastName, age);
 
-// let fullAge = true;
-// let job = 'Teacher';
-// console.log(fullAge, job);
+// //Type coercion
+// console.log(firstName + ' ' + age);
 
-/*****************************
-Variable mutation and type coercion
-*/
+// let job, isMarried;
+// job = 'Teacher';
+// isMarried = true;
 
-let firstName = 'Bita';
-let age = 29;
+// console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
 
-//Type coercion
-console.log(firstName + ' ' + age);
+// // Variable mutation
+// age = 'twenty nine';
+// job = 'driver';
 
-let job, isMarried;
-job = 'Teacher';
-isMarried = true;
+// alert(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
+// let lastName = prompt('What is her last name?');
+// console.log(firstName, lastName);
 
-// Variable mutation
-age = 'twenty nine';
-job = 'driver';
+/***********************************
+Basic operators
+ */
 
-alert(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
+let year, yearBita, yearChris;
+year = 2020;
+yearBita = year - 29;
+yearChris = year - 31;
 
-let lastName = prompt('What is her last name?');
-console.log(firstName, lastName);
+console.log(yearBita, yearChris);
+console.log(year + 20);
+console.log(year * 20);
+console.log(year / 20);
+
+/***********************************
+Logical operators
+ */
+
