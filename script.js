@@ -42,28 +42,49 @@
 Basic operators
  */
 
-let year, yearBita, yearChris;
-year = 2020;
-ageBita = 29;
-ageChris = 31;
+// let year, yearBita, yearChris;
+// year = 2020;
+// ageBita = 29;
+// ageChris = 31;
 
-// math operators
-yearBita = year - ageBita;
-yearChris = year - ageChris;
+// // math operators
+// yearBita = year - ageBita;
+// yearChris = year - ageChris;
 
-console.log(yearBita, yearChris);
-console.log(year + 20);
-console.log(year * 20);
-console.log(year / 20);
+// console.log(yearBita, yearChris);
+// console.log(year + 20);
+// console.log(year * 20);
+// console.log(year / 20);
 
-// logical operators
+// // logical operators
 
-let chrisOlder = ageChris > ageBita;
-console.log(chrisOlder);
+// let chrisOlder = ageChris > ageBita;
+// console.log(chrisOlder);
 
-// typeof operators
-console.log(typeof chrisOlder);
-console.log(typeof ageBita);
-console.log(typeof 'Chris is older than Bita');
-let x;
-console.log(typeof x);
+// // typeof operators
+// console.log(typeof chrisOlder);
+// console.log(typeof ageBita);
+// console.log(typeof 'Chris is older than Bita');
+// let x;
+// console.log(typeof x);
+
+/***********************************
+Operator precedence
+ */
+
+let year = 2020;
+let yearBita = 1990;
+let fullAge = 21;
+
+// multiple operators
+let isFullAge = year - yearBita >= fullAge;
+console.log(isFullAge);
+
+// grouping
+let ageBita = year - yearBita;
+let ageChris = 31;
+let average = (ageBita + ageChris) / 2;
+console.log(average);
+
+// multiple assignments
+let x, y;
