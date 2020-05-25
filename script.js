@@ -115,16 +115,20 @@ Mark and John are trying to compare their BMI, which is calculated using the for
 4. Pring a string to the console containing the variable from step 3. (Something like "Is Marks BMI higher than John's? true/false").
 */
 
-let markMass = 70;
-let markHeight = 1.8;
-let johnMass = 80;
-let johnHeight = 1.9;
+// let markMass = 70;
+// let markHeight = 1.8;
+// let johnMass = 80;
+// let johnHeight = 1.9;
 
-let markBMI = markMass / (markHeight * markHeight);
-console.log(markBMI);
-let johnBMI = johnMass / (johnHeight * johnHeight);
-console.log(johnBMI);
+// let markBMI = markMass / (markHeight * markHeight);
+// console.log(markBMI);
+// let johnBMI = johnMass / (johnHeight * johnHeight);
+// console.log(johnBMI);
 
-let higherBMI = markBMI > johnBMI;
-console.log(higherBMI);
-console.log('Is Marks BMI higher than Johns? The answer is ' + higherBMI);
+// let higherBMI = markBMI > johnBMI;
+// console.log(higherBMI);
+// console.log('Is Marks BMI higher than Johns? The answer is ' + higherBMI);
+
+/***********************************
+If / else statements
+ */
