@@ -134,35 +134,50 @@ If / else statements
  */
 
 
+// let firstName = 'Bita';
+// let civilStatus = 'married';
+
+// if (civilStatus === 'married') {
+//     console.log(firstName + ' is married!');
+// } else {
+//     console.log(firstName + ' is single!');
+// }
+
+
+// let isMarried = true;
+// if (isMarried) {
+//     console.log('still married!');
+// } else {
+//     console.log('still single!');
+// }
+
+// let markMass = 70;
+// let markHeight = 1.8;
+// let johnMass = 80;
+// let johnHeight = 1.9;
+
+// let markBMI = markMass / (markHeight * markHeight);
+// console.log(markBMI);
+// let johnBMI = johnMass / (johnHeight * johnHeight);
+// console.log(johnBMI);
+
+// if (markBMI > johnBMI) {
+//     console.log('Marks BMI is higher');
+// } else {
+//     console.log('Johns BMI is higher');
+// }
+
+/***********************************
+Boolean logic
+ */
+
 let firstName = 'Bita';
-let civilStatus = 'married';
+let age = 29;
 
-if (civilStatus === 'married') {
-    console.log(firstName + ' is married!');
+if (age < 13) {
+    console.log(firstName + ' is a girl');
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + ' is a teenager');
 } else {
-    console.log(firstName + ' is single!');
-}
-
-
-let isMarried = true;
-if (isMarried) {
-    console.log('still married!');
-} else {
-    console.log('still single!');
-}
-
-let markMass = 70;
-let markHeight = 1.8;
-let johnMass = 80;
-let johnHeight = 1.9;
-
-let markBMI = markMass / (markHeight * markHeight);
-console.log(markBMI);
-let johnBMI = johnMass / (johnHeight * johnHeight);
-console.log(johnBMI);
-
-if (markBMI > johnBMI) {
-    console.log('Marks BMI is higher');
-} else {
-    console.log('Johns BMI is higher');
+    console.log(firstName + ' is a woman');
 }
