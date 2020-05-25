@@ -132,3 +132,37 @@ Mark and John are trying to compare their BMI, which is calculated using the for
 /***********************************
 If / else statements
  */
+
+
+let firstName = 'Bita';
+let civilStatus = 'married';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' is single!');
+}
+
+
+let isMarried = true;
+if (isMarried) {
+    console.log('still married!');
+} else {
+    console.log('still single!');
+}
+
+let markMass = 70;
+let markHeight = 1.8;
+let johnMass = 80;
+let johnHeight = 1.9;
+
+let markBMI = markMass / (markHeight * markHeight);
+console.log(markBMI);
+let johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(johnBMI);
+
+if (markBMI > johnBMI) {
+    console.log('Marks BMI is higher');
+} else {
+    console.log('Johns BMI is higher');
+}
