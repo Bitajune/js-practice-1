@@ -197,6 +197,7 @@ let drink = age >= 21 ? 'beer' : 'water';
 let job = 'teacher';
 switch (job) {
     case 'teacher':
+    case 'instructor':
         console.log(firstName + ' teaches kids how to read.');
         break;
     case 'driver':
@@ -207,4 +208,15 @@ switch (job) {
         break;
     default:
         console.log(firstName + ' does something else.');
-} 
+}
+
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a girl');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager');
+        break;
+    default:
+        console.log(firstName + ' is a woman');
+}
