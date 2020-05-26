@@ -226,16 +226,48 @@ Ternary operator and switch statements
 Truthy and Falsy
  */
 
-let height;
-height = 23;
+// let height;
+// height = 23;
 
-if (height || height === 0) {
-    console.log('variable is defined');
-} else {
-    console.log('variable is not defined');
-}
+// if (height || height === 0) {
+//     console.log('variable is defined');
+// } else {
+//     console.log('variable is not defined');
+// }
 
 // equality operators
-if (height == '23') {
-    console.log('The == operator does type coercion!');
+// if (height == '23') {
+//     console.log('The == operator does type coercion!');
+// }
+
+/***********************************
+Coding Challenge 2
+ */
+
+/*
+John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 69, 126, and 103 points, while Mikes team scored 116, 94, and 123 points.
+
+1. Calculate the average score for each team.
+2. Decide which teams wins in average (heighest average score), and print the winner to the console. Also include the average score in the output.
+3. Then change the scores to show different winners. Don't forget to take into account there might be a draw (same average score).
+
+4. EXTRA: Mary also plays basketball and her team scored 97, 134, and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision.
+5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
+ */
+
+let johnAverage = (100 + 200 + 88) / 3;
+console.log(johnAverage);
+let mikeAverage = (98 + 150 + 120) / 3;
+console.log(mikeAverage);
+let maryAverage = (69 + 126 + 103) / 3;
+console.log(maryAverage);
+
+if (johnAverage > mikeAverage && johnAverage > maryAverage) {
+    console.log('john had a higher average of ' + johnAverage);
+} else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
+    console.log('mike had a higher average of ' + mikeAverage);
+} else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
+    console.log('mary had a higher average of ' + maryAverage);
+} else {
+    console.log('mary, john, and mike tied with their averages being ' + johnAverage);
 }
