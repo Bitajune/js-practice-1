@@ -171,13 +171,40 @@ If / else statements
 Boolean logic
  */
 
+// let firstName = 'Bita';
+// let age = 29;
+
+// if (age < 13) {
+//     console.log(firstName + ' is a girl');
+// } else if (age >= 13 && age < 20) {
+//     console.log(firstName + ' is a teenager');
+// } else {
+//     console.log(firstName + ' is a woman');
+// }
+
+/***********************************
+Ternary operator and switch statements
+ */
+
 let firstName = 'Bita';
 let age = 29;
 
-if (age < 13) {
-    console.log(firstName + ' is a girl');
-} else if (age >= 13 && age < 20) {
-    console.log(firstName + ' is a teenager');
-} else {
-    console.log(firstName + ' is a woman');
-}
+age >= 21 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks water');
+
+let drink = age >= 21 ? 'beer' : 'water';
+
+// switch statement
+let job = 'teacher';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to read.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives people around.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+} 
