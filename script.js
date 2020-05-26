@@ -186,37 +186,56 @@ Boolean logic
 Ternary operator and switch statements
  */
 
-let firstName = 'Bita';
-let age = 29;
+// let firstName = 'Bita';
+// let age = 29;
 
-age >= 21 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks water');
+// age >= 21 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks water');
 
-let drink = age >= 21 ? 'beer' : 'water';
+// let drink = age >= 21 ? 'beer' : 'water';
 
 // switch statement
-let job = 'teacher';
-switch (job) {
-    case 'teacher':
-    case 'instructor':
-        console.log(firstName + ' teaches kids how to read.');
-        break;
-    case 'driver':
-        console.log(firstName + ' drives people around.');
-        break;
-    case 'designer':
-        console.log(firstName + ' designs beautiful websites.');
-        break;
-    default:
-        console.log(firstName + ' does something else.');
+
+// let job = 'teacher';
+// switch (job) {
+//     case 'teacher':
+//     case 'instructor':
+//         console.log(firstName + ' teaches kids how to read.');
+//         break;
+//     case 'driver':
+//         console.log(firstName + ' drives people around.');
+//         break;
+//     case 'designer':
+//         console.log(firstName + ' designs beautiful websites.');
+//         break;
+//     default:
+//         console.log(firstName + ' does something else.');
+// }
+
+// switch (true) {
+//     case age < 13:
+//         console.log(firstName + ' is a girl');
+//         break;
+//     case age >= 13 && age < 20:
+//         console.log(firstName + ' is a teenager');
+//         break;
+//     default:
+//         console.log(firstName + ' is a woman');
+// }
+
+/***********************************
+Truthy and Falsy
+ */
+
+let height;
+height = 23;
+
+if (height || height === 0) {
+    console.log('variable is defined');
+} else {
+    console.log('variable is not defined');
 }
 
-switch (true) {
-    case age < 13:
-        console.log(firstName + ' is a girl');
-        break;
-    case age >= 13 && age < 20:
-        console.log(firstName + ' is a teenager');
-        break;
-    default:
-        console.log(firstName + ' is a woman');
+// equality operators
+if (height == '23') {
+    console.log('The == operator does type coercion!');
 }
