@@ -255,19 +255,48 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
  */
 
-let johnAverage = (100 + 200 + 88) / 3;
-console.log(johnAverage);
-let mikeAverage = (98 + 150 + 120) / 3;
-console.log(mikeAverage);
-let maryAverage = (69 + 126 + 103) / 3;
-console.log(maryAverage);
+// let johnAverage = (100 + 200 + 88) / 3;
+// console.log(johnAverage);
+// let mikeAverage = (98 + 150 + 120) / 3;
+// console.log(mikeAverage);
+// let maryAverage = (69 + 126 + 103) / 3;
+// console.log(maryAverage);
 
-if (johnAverage > mikeAverage && johnAverage > maryAverage) {
-    console.log('john had a higher average of ' + johnAverage);
-} else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
-    console.log('mike had a higher average of ' + mikeAverage);
-} else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
-    console.log('mary had a higher average of ' + maryAverage);
-} else {
-    console.log('mary, john, and mike tied with their averages being ' + johnAverage);
+// if (johnAverage > mikeAverage && johnAverage > maryAverage) {
+//     console.log('john had a higher average of ' + johnAverage);
+// } else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
+//     console.log('mike had a higher average of ' + mikeAverage);
+// } else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
+//     console.log('mary had a higher average of ' + maryAverage);
+// } else {
+//     console.log('mary, john, and mike tied with their averages being ' + johnAverage);
+// }
+
+
+/***********************************
+Functions
+ */
+
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
 }
+
+let bitaAge = calculateAge(1990);
+let mikeAge = calculateAge(1985);
+let janeAge = calculateAge(1969);
+console.log(bitaAge, mikeAge, janeAge);
+
+function yearsUntilRetirement(year, firstName) {
+    let age = calculateAge(year);
+    let retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired!');
+    }
+}
+
+yearsUntilRetirement(1990, 'Bita');
+yearsUntilRetirement(1985, 'Mike');
+yearsUntilRetirement(1949, 'Jane');
