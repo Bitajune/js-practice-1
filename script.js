@@ -306,23 +306,57 @@ Functions
 Function statements & expressions
  */
 
-// declaration
+//*declaration
+
 // function whatDoYouDo(job, firstName) {}
 
-// expression
-let whatDoYouDo = function (job, firstName) {
-    switch (job) {
-        case 'teacher':
-            return firstName + ' teaches kids how to read';
-        case 'driver':
-            return firstName + ' drives around all day';
-        case 'designer':
-            return firstName + ' makes beautiful websites';
-        default:
-            return firstName + ' does something else';
-    }
-}
+//*expression
 
-console.log(whatDoYouDo('teacher', 'Bita'));
-console.log(whatDoYouDo('designer', 'Mark'));
-console.log(whatDoYouDo('retired', 'Jane'));
+// let whatDoYouDo = function (job, firstName) {
+//     switch (job) {
+//         case 'teacher':
+//             return firstName + ' teaches kids how to read';
+//         case 'driver':
+//             return firstName + ' drives around all day';
+//         case 'designer':
+//             return firstName + ' makes beautiful websites';
+//         default:
+//             return firstName + ' does something else';
+//     }
+// }
+
+// console.log(whatDoYouDo('teacher', 'Bita'));
+// console.log(whatDoYouDo('designer', 'Mark'));
+// console.log(whatDoYouDo('retired', 'Jane'));
+
+
+/***********************************
+Arrays
+ */
+
+// //*initialize new array
+// let names = ['Bita', 'John', 'Mark'];
+// let years = [1990, 1969, 1948];
+
+// console.log(names[0]);
+// console.log(names);
+// console.log(names.length);
+// console.log(years[2]);
+
+// //*mutate array
+// names[1] = 'Ben';
+// names[names.length] = 'Mary';
+// console.log(names);
+
+// //*different data types
+// let john = ['John', 'Smith', 1990, 'teacher', false];
+
+// //*add to back
+// john.push('blue');
+// //*add to front
+// john.unshift('Mr.')
+// //*remove one from end
+// john.pop()
+// console.log(john);
+
+// console.log(john.indexOf(1990));
