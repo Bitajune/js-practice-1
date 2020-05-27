@@ -277,26 +277,52 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 Functions
  */
 
-function calculateAge(birthYear) {
-    return 2020 - birthYear;
-}
+// function calculateAge(birthYear) {
+//     return 2020 - birthYear;
+// }
 
-let bitaAge = calculateAge(1990);
-let mikeAge = calculateAge(1985);
-let janeAge = calculateAge(1969);
-console.log(bitaAge, mikeAge, janeAge);
+// let bitaAge = calculateAge(1990);
+// let mikeAge = calculateAge(1985);
+// let janeAge = calculateAge(1969);
+// console.log(bitaAge, mikeAge, janeAge);
 
-function yearsUntilRetirement(year, firstName) {
-    let age = calculateAge(year);
-    let retirement = 65 - age;
+// function yearsUntilRetirement(year, firstName) {
+//     let age = calculateAge(year);
+//     let retirement = 65 - age;
 
-    if (retirement > 0) {
-        console.log(firstName + ' retires in ' + retirement + ' years.');
-    } else {
-        console.log(firstName + ' is already retired!');
+//     if (retirement > 0) {
+//         console.log(firstName + ' retires in ' + retirement + ' years.');
+//     } else {
+//         console.log(firstName + ' is already retired!');
+//     }
+// }
+
+// yearsUntilRetirement(1990, 'Bita');
+// yearsUntilRetirement(1985, 'Mike');
+// yearsUntilRetirement(1949, 'Jane');
+
+
+/***********************************
+Function statements & expressions
+ */
+
+// declaration
+// function whatDoYouDo(job, firstName) {}
+
+// expression
+let whatDoYouDo = function (job, firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to read';
+        case 'driver':
+            return firstName + ' drives around all day';
+        case 'designer':
+            return firstName + ' makes beautiful websites';
+        default:
+            return firstName + ' does something else';
     }
 }
 
-yearsUntilRetirement(1990, 'Bita');
-yearsUntilRetirement(1985, 'Mike');
-yearsUntilRetirement(1949, 'Jane');
+console.log(whatDoYouDo('teacher', 'Bita'));
+console.log(whatDoYouDo('designer', 'Mark'));
+console.log(whatDoYouDo('retired', 'Jane'));
