@@ -403,27 +403,43 @@ NOTE: to calculate 20% of a value, simply multiply it with 20/100 = 0.2
 Objects and properties
  */
 
+// let bita = {
+//     firstName: 'Bita',
+//     lastName: 'Delarosa',
+//     birthYear: 1990,
+//     family: ['Chris', 'Bart', 'Milhouse', 'Coconut'],
+//     job: 'teacher',
+//     isMarried: true
+// };
+// console.log(bita);
+// console.log(bita.lastName);
+// let x = 'birthYear';
+// console.log(bita[x]);
+
+// //* mutate the object
+// bita.job = 'designer';
+// bita['isMarried'] = false;
+// console.log(bita);
+
+
+/***********************************
+Objects and methods
+*/
+
 let bita = {
     firstName: 'Bita',
     lastName: 'Delarosa',
     birthYear: 1990,
     family: ['Chris', 'Bart', 'Milhouse', 'Coconut'],
     job: 'teacher',
-    isMarried: true
+    isMarried: true,
+    calculateAge: function (birthYear) {
+        this.age = 2020 - this.birthYear;
+    }
 };
-console.log(bita);
-console.log(bita.lastName);
-let x = 'birthYear';
-console.log(bita[x]);
 
-//* mutate the object
-bita.job = 'designer';
-bita['isMarried'] = false;
+bita.calculateAge();
 console.log(bita);
-
-/***********************************
-Objects and methods
-*/
 
 
 /***********************************
