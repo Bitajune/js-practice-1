@@ -377,24 +377,55 @@ In tht end, John would like to have 2 arrays:
 NOTE: to calculate 20% of a value, simply multiply it with 20/100 = 0.2
 */
 
-function tipCalculator(bill) {
-    let percentage;
-    if (bill < 50) {
-        percentage = .2;
-    } else if (bill >= 50 && bill < 200) {
-        percentage = .15;
-    } else {
-        percentage = .1;
-    }
-    return percentage * bill;
-}
+// function tipCalculator(bill) {
+//     let percentage;
+//     if (bill < 50) {
+//         percentage = .2;
+//     } else if (bill >= 50 && bill < 200) {
+//         percentage = .15;
+//     } else {
+//         percentage = .1;
+//     }
+//     return percentage * bill;
+// }
 
-let bills = [124, 40, 268];
-let tips = [tipCalculator(bills[0]),
-tipCalculator(bills[1]),
-tipCalculator(bills[2])];
-console.log(tips);
-let total = [bills[0] + tips[0],
-bills[1] + tips[1],
-bills[2] + tips[2]];
-console.log(total);
+// let bills = [124, 40, 268];
+// let tips = [tipCalculator(bills[0]),
+// tipCalculator(bills[1]),
+// tipCalculator(bills[2])];
+// console.log(tips);
+// let total = [bills[0] + tips[0],
+// bills[1] + tips[1],
+// bills[2] + tips[2]];
+// console.log(total);
+
+/***********************************
+Objects and properties
+ */
+
+let bita = {
+    firstName: 'Bita',
+    lastName: 'Delarosa',
+    birthYear: 1990,
+    family: ['Chris', 'Bart', 'Milhouse', 'Coconut'],
+    job: 'teacher',
+    isMarried: true
+};
+console.log(bita);
+console.log(bita.lastName);
+let x = 'birthYear';
+console.log(bita[x]);
+
+//* mutate the object
+bita.job = 'designer';
+bita['isMarried'] = false;
+console.log(bita);
+
+/***********************************
+Objects and methods
+*/
+
+
+/***********************************
+Coding Challenge 4
+*/
