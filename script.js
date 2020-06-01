@@ -490,6 +490,7 @@ Let's remember the first coding challenge where Mark and John compared their BMI
 Looping and iteration
 */
 
+/*
 for (let i = 0; i < 10; i++) {
     console.log(i);
 }
@@ -506,7 +507,27 @@ while (i < john.length) {
     console.log(john[i]);
     i++;
 }
+*/
+
+// break statements
+
+let john = ['John', 'Smith', 1990, 'teacher', false];
+for (let i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+
+for (let i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+
+//* looping backwards
+for (let i = john.length - 1; i >= 0; i--) {
+    console.log(john[i]);
+}
 
 /***********************************
 Coding Challenge 5
 */
+
