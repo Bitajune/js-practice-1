@@ -494,6 +494,19 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
 }
 
+let john = ['John', 'Smith', 1990, 'teacher', false];
+for (let i = 0; i < john.length; i++) {
+    console.log(john[i]);
+}
+
+//* while loop
+
+let i = 0;
+while (i < john.length) {
+    console.log(john[i]);
+    i++;
+}
+
 /***********************************
 Coding Challenge 5
 */
