@@ -454,33 +454,46 @@ Let's remember the first coding challenge where Mark and John compared their BMI
 */
 
 
-let mark = {
-    fullName: 'Marky Mark',
-    mass: 70,
-    height: 1.8,
-    calculateBMI: function () {
-        this.bmi = this.mass / (this.height * this.height);
-        return this.bmi;
-    }
-};
+// let mark = {
+//     fullName: 'Marky Mark',
+//     mass: 70,
+//     height: 1.8,
+//     calculateBMI: function () {
+//         this.bmi = this.mass / (this.height * this.height);
+//         return this.bmi;
+//     }
+// };
 
-let john = {
-    fullName: 'John Doe',
-    mass: 80,
-    height: 1.9,
-    calculateBMI: function () {
-        this.bmi = this.mass / (this.height * this.height);
-        return this.bmi;
-    }
-};
+// let john = {
+//     fullName: 'John Doe',
+//     mass: 80,
+//     height: 1.9,
+//     calculateBMI: function () {
+//         this.bmi = this.mass / (this.height * this.height);
+//         return this.bmi;
+//     }
+// };
 
-mark.calculateBMI();
-john.calculateBMI();
-console.log(mark, john);
+// mark.calculateBMI();
+// john.calculateBMI();
+// console.log(mark, john);
 
 
-if (mark.bmi > john.bmi) {
-    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
-} else if (john.bmi > mark.bmi) {
-    console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
-} else console.log('Both ' + mark.fullName + ' and ' + john.fullName + ' have the same bmi of ' + mark.bmi);
+// if (mark.bmi > john.bmi) {
+//     console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+// } else if (john.bmi > mark.bmi) {
+//     console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
+// } else console.log('Both ' + mark.fullName + ' and ' + john.fullName + ' have the same bmi of ' + mark.bmi);
+
+
+/***********************************
+Looping and iteration
+*/
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+/***********************************
+Coding Challenge 5
+*/
