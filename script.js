@@ -511,23 +511,61 @@ while (i < john.length) {
 
 // break statements
 
-let john = ['John', 'Smith', 1990, 'teacher', false];
-for (let i = 0; i < john.length; i++) {
-    if (typeof john[i] !== 'string') continue;
-    console.log(john[i]);
-}
+// let john = ['John', 'Smith', 1990, 'teacher', false];
+// for (let i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') continue;
+//     console.log(john[i]);
+// }
 
-for (let i = 0; i < john.length; i++) {
-    if (typeof john[i] !== 'string') break;
-    console.log(john[i]);
-}
+// for (let i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') break;
+//     console.log(john[i]);
+// }
 
-//* looping backwards
-for (let i = john.length - 1; i >= 0; i--) {
-    console.log(john[i]);
-}
+// //* looping backwards
+// for (let i = john.length - 1; i >= 0; i--) {
+//     console.log(john[i]);
+// }
 
 /***********************************
 Coding Challenge 5
 */
 
+/*
+Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
+
+This time, John and his family went to 5 different restaurants. The bills were $124, $48, $268, $180, and $42.
+John likes to tip 20% of the bill when the bill is less than $50, %15 when the bill is between $50 and $200, and 10% if the bill is more than $200. (He's still cheap)
+
+Implement a tip calculator using objects and loops!
+1. Create an object with an array for the bill values.
+2. Add a method to calculate the tip.
+3. This method should include a loop to iterate over all the paid bills and do the tip calculations.
+4. As an output, create 1) a new array containing all the tips, and 2) an array containing final paid amounts (bill + tip). HINT: start with two empty arrays as properties then fill them up in the loop.
+*/
+
+let john = {
+    fullName: 'John Smith',
+    bills: [124, 48, 268, 180, 42],
+    calculateTips: function () {
+        this.tips = [];
+        this.finalValue = [];
+        for (let i = 0; i < this.bills.length; i++) {
+            let percentage;
+            let bill = this.bills[i];
+
+            if (bill < 50) {
+                percentage = .2;
+            } else if (bill >= 50 && bill < 200) {
+                percentage = .15;
+            } else {
+                percentage = .1;
+            }
+            this.tips[i] = bill * percentage;
+            this.finalValue[i] = bill + bill * percentage;
+        }
+    }
+}
+
+john.calculateTips();
+console.log(john);
